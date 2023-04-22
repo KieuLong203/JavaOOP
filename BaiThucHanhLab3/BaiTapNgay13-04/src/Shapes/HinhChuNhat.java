@@ -4,10 +4,26 @@ import java.util.Scanner;
 
 public class HinhChuNhat extends HinhHoc{
 
-    public float dai, rong;
+    private float dai, rong;
 
     public HinhChuNhat(){
-        ten = "Hinh chu nhat";
+        super.setTen("Hinh Chu Nhat");
+    }
+    public HinhChuNhat(String ten){
+        super.setTen(ten);
+    }
+//getter & setter
+    public float getDai(){
+        return this.dai;
+    }
+    public void setDai(float dai){
+        this.dai = dai;
+    }
+    public float getRong(){
+        return this.rong;
+    }
+    public void setRong(float rong){
+        this.rong = rong;
     }
 
     public void nhapChieuDai(){
@@ -23,10 +39,10 @@ public class HinhChuNhat extends HinhHoc{
     }
 
     public void tinhChuVi(){
-        chuVi = (dai + rong) * 2;
+        setChuVi(2*(dai + rong));
     }
 
     public void tinhDienTich(){
-        dienTich = dai * rong;
+        setDienTich(dai * rong);
     }
 }

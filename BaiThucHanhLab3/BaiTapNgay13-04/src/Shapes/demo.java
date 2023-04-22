@@ -5,7 +5,7 @@ public class demo {
         HinhTron ht = new HinhTron();
         ht.xuatTen();
         ht.nhapBanKinh();
-        ht.tinhChuVi();
+        ht.tinhChuViHinhTron();
         ht.tinhDienTich();
         ht.inChuVi();
         ht.inDienTich();
