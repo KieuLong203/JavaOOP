@@ -39,6 +39,7 @@ public class LinkedListDemo {
                     break;
                 case 6:
                     System.out.println(" ");
+                    break;
                 default:
                     System.out.println("Lua chon khong hop le vui long chon lai");
                     break;
