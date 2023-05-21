@@ -36,17 +36,32 @@ public class Bai1 {
 
         System.out.println("\nNhap vao mot so nguyen muon xoa: ");
         int delete = sc.nextInt();
+        boolean found = false;
         for(int i = 0; i < arr.size(); i++) { 
             if(arr.get(i)==delete) {
                 arr.remove(i);
+                found = true;
+                break;
             }
+        }
+        if(!found) { 
+            System.out.println("So nguyen ban nhap khong co trong danh sach");
+        } else {
+            System.out.println("Da xoa thanh cong");
         }
         System.out.print("ArrayList sau khi xoa phan tu: " +arr);
 
-        for(int i = 0; i < arr.size(); i++) {
+        for(int i = 0; i < arr.size()-1; i++) {
             for(int j = i + 1; j < arr.size(); j++) { 
-                if()
+                if(arr.get(i)>arr.get(j)) {
+                    int temp = arr.get(i);
+                    arr.set(i,arr.get(j));
+                    arr.set(j,temp);
+                }
             }
         }
+        System.out.print("\nMang sau khi sap xep tang dan: "+arr);
+
+        sc.close();
     }
 }

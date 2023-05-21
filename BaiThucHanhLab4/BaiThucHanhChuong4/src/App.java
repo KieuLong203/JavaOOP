@@ -1,5 +1,11 @@
+import java.util.HashMap;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+            HashMap<SinhVien, SinhVien> sv = new HashMap<>();
+            SinhVien.inputInfo(sv);
+            SinhVien.displayInfo(sv);
+            SinhVien.searchByClass(sv);
+            SinhVien.searchByMSV(sv);
     }
 }
